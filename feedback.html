@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCCE - Registro de Ocorrência</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Menu Lateral -->
+    <aside id="menu-lateral" class="menu-lateral">
+        <div class="menu-header">
+            <h1>PCRN</h1>
+            <img src="img/pcrn.png" alt="Logo PCCE" class="logo">
+        </div>
+        <ul class="menu-items">
+            <li><a href="file:///C:/Users/Edilanny/Desktop/Projeto%20-%20PIU/index.html"><i class="fas fa-home-alt"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-phone-alt"></i> Contatos</a></li>
+            <li><a href="#"><i class="fas fa-shield-alt"></i> Segurança</a></li>
+            <li><a href="#"><i class="fas fa-concierge-bell"></i> Serviços</a></li>
+            <li><a href="#"><i class="fas fa-newspaper"></i> Notícias</a></li>
+            <li><a href="#"><i class="fas fa-flag"></i> Missões</a></li>
+            <li><a href="file:///C:/Users/Edilanny/Desktop/Projeto%20-%20PIU/feedback.html"><i class="fas fa-envelope"></i> Fale Conosco</a></li>
+        </ul>
+        <button class="close-btn" onclick="toggleMenu()"><i class="fas fa-arrow-left"></i></button>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="conteudo">
+        <header>
+            <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+            <div class="feedback-section">
+                <h2>Feedback</h2>
+            
+                <!-- Menu com textos e linha verde animada -->
+                <div class="feedback-menu">
+                    <span class="menu-item active" data-position="0">Feedback para melhorar o nosso sistema</span>
+                    <!-- Linha verde animada -->
+                    <div class="feedback-line-green"></div>
+                </div>
+            
+                <label for="descricao">Descrição da sua experiência</label>
+                <textarea id="descricao" class="feedback-textarea" placeholder="Descreva brevemente o motivo pelo qual você entrou em contato com a Polícia Civil..."></textarea>
+            
+                <label for="sugestoes">Sugestões de melhorias (se houver)</label>
+                <textarea id="sugestoes" class="feedback-textarea" placeholder="Se você sentiu que algo poderia ser melhorado, essa é a oportunidade de expressar suas sugestões..."></textarea>
+            
+                <button class="confirm-btn">Confirmar</button>
+            </div>
+        </header>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
