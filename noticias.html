@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCCE - Noticias</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Menu Lateral -->
+    <aside id="menu-lateral" class="menu-lateral">
+        <div class="menu-header">
+            <h1>PCRN</h1>
+            <img src="img/pcrn.png" alt="Logo PCCE" class="logo">
+        </div>
+        <ul class="menu-items">
+            <li><a href="index.html"><i class="fas fa-home-alt"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-phone-alt"></i> Contatos</a></li>
+            <li><a href="#"><i class="fas fa-shield-alt"></i> Segurança</a></li>
+            <li><a href="#"><i class="fas fa-concierge-bell"></i> Serviços</a></li>
+            <li><a href="noticias.html"><i class="fas fa-newspaper"></i> Notícias</a></li>
+            <li><a href="#"><i class="fas fa-flag"></i> Missões</a></li>
+            <li><a href="feedback.html"><i class="fas fa-envelope"></i> Fale Conosco</a></li>
+        </ul>
+        <button class="close-btn" onclick="toggleMenu()"><i class="fas fa-arrow-left"></i></button>
+    </aside>
+
+    <!-- Barra de Notificação -->
+    <div class="notification-bar" id="notificationBar">
+         <div class="notification-content">
+            <p>Banco de Alimentos: Combatendo o Desperdício e Promovendo a Segurança Alimentar!</p>
+            <a href="https://www.natal.rn.gov.br/news/post2/41204" class="btn-acao">Saiba Mais</a>
+        </div>
+    </div> <br><br><br>
+    <!-- Conteúdo principal -->
+    <main class="conteudo">
+        <header>
+            <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+        </header>
+        <h2>Noticias</h2>
+        <h5>Fale Conosco para Apoio, Denúncias e Serviços da Policia Civil.</h5> <br><br>
+        <div class="container">
+                <!-- Manchete Principal -->
+            <div class="main-headline" id="main-headline">
+                <h2>Manchete do Dia: Operação desmantela quadrilha de tráfico em Natal</h2>
+                <p id="headline-description">A Polícia Civil realizou uma operação que resultou na prisão de 12 membros de uma quadrilha de tráfico de drogas atuante em Natal e cidades vizinhas. A ação foi um sucesso e mobilizou mais de 100 agentes.</p>
+            </div>
+
+            <!-- Lista de Notícias -->
+            <div class="news-list" id="news-list">
+                <!-- Itens de notícias serão inseridos dinamicamente aqui -->
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

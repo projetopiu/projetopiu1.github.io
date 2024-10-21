@@ -86,33 +86,6 @@ h2 {
     padding: 16px;
 }
 
-.search-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.search-form input {
-    width: 300px;
-    padding: 10px;
-    font-size: 16px;
-    border: 2px solid #4CAF50;
-    border-radius: 5px;
-}
-
-.search-form button {
-    padding: 10px 15px;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    color: white;
-}
-
-.search-form button:hover {
-    background-color: #45a049;
-}
-
 .registro-ocorrencia h2 {
     margin-top: 20px;
 }
@@ -174,10 +147,6 @@ h2 {
         width: 100%;
     }
 }
-
-
-
-
 
 
 
@@ -290,5 +259,130 @@ h2 {
 
     .feedback-line-green {
         width: 80px; /* Ajustar a largura da linha em telas menores */
+    }
+}
+
+
+
+/* Estilos da Barra de Notificação */
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos da Barra de Notificação */
+.notification-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #4CAF50; 
+    color: #fff;
+    padding: 5px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    z-index: 1000;
+}
+
+/* Estilos do conteúdo da notificação */
+.notification-content {
+    display: flex;
+    align-items: center; /* Centraliza os itens verticalmente */
+}
+
+/* Estilos do texto */
+.notification-content p {
+    margin-right: 20px; /* Espaçamento entre o texto e o botão */
+    font-size: 16px;
+}
+
+/* Estilos do botão */
+.btn-acao {
+    background-color: #fff;
+    color: #45a049; /* Verde para o botão */
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito hover no botão */
+.btn-acao:hover {
+    background-color: #ffecec; /* Mudança de cor no hover */
+}
+
+/* Responsividade */
+@media (min-width: 600px) {
+    .notification-content p {
+        margin-right: 20px; /* Espaçamento ajustado para telas maiores */
+        font-size: 18px; /* Aumenta o tamanho do texto em telas maiores */
+    }
+}
+
+
+/*Noticias:*/
+/* Manchete Principal */
+.main-headline {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.main-headline h2 {
+    font-size: 28px;
+}
+
+.main-headline p {
+    margin-top: 10px;
+}
+
+/* Lista de Notícias */
+.news-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.news-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+    transition: box-shadow 0.3s ease;
+}
+
+.news-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.news-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.news-item p {
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .news-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .news-item {
+        width: 100%;
     }
 }
