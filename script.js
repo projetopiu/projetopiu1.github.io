@@ -23,6 +23,44 @@ stars.forEach((star, index) => {
     });
 });
 
+// validacao dos formularios:
+let selectedRating = 0;
+
+function selectStar(rating) {
+    selectedRating = rating;
+    document.getElementById('rating').value = rating;
+
+    const stars = document.querySelectorAll('.star');
+    stars.forEach((star, index) => {
+        star.innerHTML = index < rating ? '&#9733;' : '&#9734;'; // Preenchida ou vazia
+    });
+}
+
+function submitForm() {
+    const ocorrenciaText = document.getElementById('ocorrencia-text').value.trim();
+    const rating = selectedRating;
+
+    if (!ocorrenciaText) {
+        alert('Por favor, preencha a avaliação da ocorrência.');
+        return;
+    }
+
+    if (rating === 0) {
+        alert('Por favor, selecione uma avaliação por estrelas.');
+        return;
+    }
+
+    // Se tudo estiver correto, você pode enviar o formulário aqui
+    alert('Avaliação enviada com sucesso!'); // Simulando envio
+
+    // Limpar os campos após o envio
+    document.getElementById('ocorrencia-text').value = '';
+    selectedRating = 0;
+    document.getElementById('rating').value = '0';
+    const stars = document.querySelectorAll('.star');
+    stars.forEach(star => star.innerHTML = '&#9733;'); // Reseta as estrelas
+}
+
 
 //feedback =>:
 

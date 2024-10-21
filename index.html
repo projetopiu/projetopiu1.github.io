@@ -27,31 +27,35 @@
     </aside>
 
     <!-- Conteúdo principal -->
-    <main class="conteudo">
-        <header>
-            <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
-        </header> <br><br>
-        <h2>Pagina principal</h2>
-        <h5>Fale Conosco para Apoio, Denúncias e Serviços da Policia Civil.</h5> <br>
-        <section class="registro-ocorrencia">
-            <div class="ocorrencia">
-                <h2>Avalie Ocorrência</h2>
-                <textarea placeholder="Avalie o Nivel da sua Ocorrência..."></textarea>
+<!-- Conteúdo principal -->
+<main class="conteudo">
+    <header>
+        <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+    </header>
+    <br><br>
+    <h2>Página Principal</h2>
+    <h5>Fale Conosco para Apoio, Denúncias e Serviços da Polícia Civil.</h5>
+    <br>
+    <section class="registro-ocorrencia">
+        <div class="ocorrencia">
+            <h2>Avalie Ocorrência</h2>
+            <textarea id="ocorrencia-text" placeholder="Avalie o nível da sua ocorrência..."></textarea>
+        </div>
+        <div class="avaliacao">
+            <h2>Avalie</h2>
+            <p>Avalie o nível da sua ocorrência por estrelas:</p>
+            <div class="rating" id="rating-container">
+                <span class="star" onclick="selectStar(1)">&#9733;</span>
+                <span class="star" onclick="selectStar(2)">&#9733;</span>
+                <span class="star" onclick="selectStar(3)">&#9733;</span>
+                <span class="star" onclick="selectStar(4)">&#9733;</span>
+                <span class="star" onclick="selectStar(5)">&#9733;</span>
             </div>
-            <div class="avaliacao">
-                <h2>Avalie</h2>
-                <p>Avalie o Nivel da Sua ocorrencia por Estelas:</p>
-                <div class="rating">
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                </div>
-            </div>
-            <button class="confirm-btn">Enviar</button>
-        </section>
-    </main>
+            <input type="hidden" id="rating" value="0">
+        </div>
+        <button class="confirm-btn" onclick="submitForm()">Enviar</button>
+    </section>
+</main>
 
     <script src="script.js"></script>
 </body>
