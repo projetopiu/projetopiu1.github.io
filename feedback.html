@@ -16,7 +16,7 @@
         </div>
         <ul class="menu-items">
             <li><a href="index.html"><i class="fas fa-home-alt"></i> Home</a></li>
-            <li><a href="#"><i class="fas fa-phone-alt"></i> Contatos</a></li>
+            <li><a href="contatos.html"><i class="fas fa-phone-alt"></i> Contatos</a></li>
             <li><a href="#"><i class="fas fa-shield-alt"></i> Segurança</a></li>
             <li><a href="#"><i class="fas fa-concierge-bell"></i> Serviços</a></li>
             <li><a href="noticias.html"><i class="fas fa-newspaper"></i> Notícias</a></li>
@@ -27,31 +27,33 @@
     </aside>
 
     <!-- Conteúdo principal -->
-    <main class="conteudo">
+    <div class="principal">
         <header>
             <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
-            <h2>Fale Conosco</h2>
-            <h5>Fale Conosco para Apoio, Denúncias e Serviços da Policia Civil.</h5>
-            <div class="feedback-section">
-            
-                <!-- Menu com textos e linha verde animada -->
-                <div class="feedback-menu">
-                    <span class="menu-item active" data-position="0">Feedback para melhorar o nosso sistema</span>
-                    <!-- Linha verde animada -->
-                    <div class="feedback-line-green"></div>
-                </div>
-            
-                <label for="descricao">Descrição da sua experiência</label>
-                <textarea id="descricao" class="feedback-textarea" placeholder="Descreva brevemente o motivo pelo qual você entrou em contato com a Polícia Civil..."></textarea>
-            
-                <label for="sugestoes">Sugestões de melhorias (se houver)</label>
-                <textarea id="sugestoes" class="feedback-textarea" placeholder="Se você sentiu que algo poderia ser melhorado, essa é a oportunidade de expressar suas sugestões..."></textarea>
-            
-                <button class="confirm-btn">Confirmar</button>
-            </div>
         </header>
-    </main>
-
+         <main class="conteudo">
+                <h2>Fale Conosco</h2>
+                <h5>Fale Conosco para Apoio, Denúncias e Serviços da Policia Civil.</h5>
+                <div class="feedback-section">
+                
+                    <!-- Menu com textos e linha verde animada -->
+                    <div class="feedback-menu">
+                        <span class="menu-item active" data-position="0">Feedback para melhorar o nosso sistema</span>
+                        <!-- Linha verde animada -->
+                        <div class="feedback-line-green"></div>
+                    </div>
+                
+                    <label for="descricao">Descrição da sua experiência</label>
+                    <textarea id="descricao" class="feedback-textarea" placeholder="Descreva brevemente o motivo pelo qual você entrou em contato com a Polícia Civil..."></textarea>
+                
+                    <label for="sugestoes">Sugestões de melhorias (se houver)</label>
+                    <textarea id="sugestoes" class="feedback-textarea" placeholder="Se você sentiu que algo poderia ser melhorado, essa é a oportunidade de expressar suas sugestões..."></textarea>
+                
+                    <button class="confirm-btn">Confirmar</button>
+                </div>
+            </header>
+        </main>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

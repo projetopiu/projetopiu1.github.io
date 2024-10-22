@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCCE - Contatos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Menu Lateral -->
+    <aside id="menu-lateral" class="menu-lateral">
+        <div class="menu-header">
+            <h1>PCRN</h1>
+            <img src="img/pcrn.png" alt="Logo PCCE" class="logo">
+        </div>
+        <ul class="menu-items">
+            <li><a href="index.html"><i class="fas fa-home-alt"></i> Home</a></li>
+            <li><a href="contatos.html"><i class="fas fa-phone-alt"></i> Contatos</a></li>
+            <li><a href="#"><i class="fas fa-shield-alt"></i> Segurança</a></li>
+            <li><a href="#"><i class="fas fa-concierge-bell"></i> Serviços</a></li>
+            <li><a href="noticias.html"><i class="fas fa-newspaper"></i> Notícias</a></li>
+            <li><a href="#"><i class="fas fa-flag"></i> Missões</a></li>
+            <li><a href="feedback.html"><i class="fas fa-envelope"></i> Fale Conosco</a></li>
+        </ul>
+        <button class="close-btn" onclick="toggleMenu()"><i class="fas fa-arrow-left"></i></button>
+    </aside>
+
+    <div class="principal">
+        <header>
+            <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+        </header>
+        <main class="conteudo">
+            <h2>Contatos</h2>
+            <h5>Fale Conosco para Apoio, Denúncias e Serviços da Polícia Civil.</h5>
+
+            <!-- Seção de Feedback -->
+            <div class="feedback-section">
+                <!-- Menu com textos e linha verde animada -->
+                <div class="feedback-menu">
+                    <span class="menu-item active" data-position="0" onclick="showSection('canais')">Canais de Atendimento</span>
+                    <span class="menu-item" data-position="1" onclick="showSection('formularios')">Formulários de Contato</span>
+                    <!-- Linha verde animada -->
+                    <div class="feedback-line-green"></div>
+                </div>
+
+                <!-- Seção 1: Canais de Atendimento -->
+                <div id="canais" class="feedback-content active">
+                    <h3>Canais de Atendimento</h3>
+                    <p>Entre em contato pelos nossos canais oficiais de atendimento:</p>
+                    <ul>
+                        <li>Telefone: (84) 1234-5678</li>
+                        <li>Email: atendimento@policiacivil.rn.gov.br</li>
+                        <li>WhatsApp: (84) 98765-4321</li>
+                        <li>Delegacias Online: <a href="#">Clique aqui para acessar</a></li>
+                    </ul>
+                </div>
+
+                <!-- Seção 2: Formulários de Contato -->
+                <div id="formularios" class="feedback-content">
+                    <h3>Formulários de Contato</h3>
+                    <p>Preencha o formulário abaixo para entrar em contato conosco:</p>
+                    <form action="/enviar-feedback" method="post">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required><br><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br><br>
+
+                        <button class="confirm-btn" onclick="submitForm()">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
